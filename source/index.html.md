@@ -30,9 +30,10 @@ In this section, we describe all the necessary steps to send your first broadcas
 But first thing first. MessageWhiz uses API keys to allow access to the API. You can get an API key here. 
 (You can find your API key in your [MW account](https://sms.messagewhiz.com/app/account))
 
-MessageWhiz expects for the API key to be included in all API requests to the server in a header that looks like the following:
-`
-POST /api/3/ HTTP/1.1
+MessageWhiz expects for the API key to be included in all API requests to the server in a header that looks like the 
+following:
+
+`POST /api/3/ HTTP/1.1
 Host: <url>
 apikey: <apikey>
 Content-Type: application/json
@@ -194,6 +195,7 @@ filter | all | filtering by the specific campaign name?
 start | 0 | the number of items to skip
 
 For example, to get first two inactive campaigns, the query URL will be the following:
+    
 `http://sms.mmdsmart.com/api/3/campaign?limit=2&enabled=false`
 
 ### Response Messages
